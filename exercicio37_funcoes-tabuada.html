@@ -1,0 +1,45 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Javascript - Funções (tabuada)</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Javascript - Funções (tabuada)</h1>
+
+			<button onclick="mostrarTabuada()">Mostrar Tabuada</button> 
+			<button onclick="limparTabuada()">Limpar Tabuada</button>
+			<div id="output"></div>
+
+			<script>
+				const output = document.getElementById('output');
+
+				function mostrarTabuada() {
+					//pedir para o usuário digitar um número
+					let numero = prompt('Digite um número');
+					numero = parseInt(numero);
+
+					//mostrar a tabuada desse número de 1 a 1000
+					let msg = "";
+					for(let i = 0; i <= 1000; i++) {
+						msg += `${numero} x ${i} = ${(numero * i)} <br>`;
+
+						if(i % 10 === 0 && i > 0) {
+							msg += ('<hr>');
+						}
+
+						if( isNaN(numero) ) {
+							throw new Error('chama passando somente números');
+						}
+					}
+					output.innerHTML = msg;
+				}
+				mostrarTabuada();
+				
+				function limparTabuada() {
+					output.innerHTML = "";
+				}
+			</script>
+		</body>
+	</html>
