@@ -1,0 +1,34 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Javascript: Objects</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Javascript: Objects</h1>
+
+			<script>
+				// const nomes = ["Daniel", "Maria", "João"];
+				// const idades = [null, 40, 28, 35];
+				// console.log(nomes[0], idades[0]);
+				
+				//sintaxe formal
+				const pessoa1 = new Object();
+				pessoa1.nome = "Daniel";
+				pessoa1.idade = 40;
+				console.log(pessoa1);
+				let prop = "nome";
+				console.log(pessoa1[prop]);
+				console.log(pessoa1["idade"]);
+				
+
+				//sintaxe literal
+				const pessoa2 = {
+					nome: "Renata",
+					idade: 39
+				}
+				console.log(pessoa2);
+			</script>
+		</body>
+	</html>
