@@ -1,0 +1,25 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Javascript: Iterar Objetos</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Javascript: Iterar Objetos</h1>
+
+			<script>
+				const pessoa = {
+					nome: "Maria", 
+					idade: 28,
+					"email": "ela@server.com"
+				}
+				console.log(pessoa);
+
+				for(let prop in pessoa) {
+					console.log(prop);
+					console.log(pessoa[prop]);
+				}
+			</script>
+		</body>
+	</html>
