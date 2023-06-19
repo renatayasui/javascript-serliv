@@ -1,0 +1,36 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Javascript: Arrays de Objetos</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Javascript: Arrays de Objetos</h1>
+
+			<script>
+				const nomes = ["Daniel", "Maria", ""]
+				const pessoa = {nome: "Daniel", idade: 10, email: ""}
+				const pessoa1 = {}
+
+				const pessoas = [ {
+					nome: "Daniel",
+					idade: 40
+				}, {
+					nome: "Maria",
+					idade: 28
+				}, {
+					nome: "Helena",
+					idade: 45
+				}, {
+					nome: "João",
+					idade: 18
+				}]
+				
+				for(let i = 0; i < pessoas.length; i++) {
+					console.log(`${pessoas[i].nome} possui ${pessoas[i].idade} anos`)
+				}
+			
+			</script>
+		</body>
+	</html>
