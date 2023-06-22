@@ -1,0 +1,32 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Javascript: valor vs referência</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Javascript: valor vs referência</h1>
+
+			<script>
+				function alteraArray(a) {
+					a.push("adicionado")
+				}
+
+				let arr = ["a"]
+				console.log(arr)
+				alteraArray(arr)
+				console.log(arr)
+
+				function alteraPrimitivo(p) { //o p armazena o valor "mensagem"
+					p += " adicionado"
+					console.log(" dentro da função: ", p)
+				}
+			
+				let msg = "mensagem"
+				console.log(msg);
+				alteraPrimitivo(msg);
+				console.log(msg);	
+			</script>
+		</body>
+	</html>
