@@ -1,0 +1,32 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>Javascript: try catch</title>
+			<meta charset="utf-8">
+		</head>
+
+		<body>
+			<h1>Javascript: try catch</h1>
+
+			<script src="aula51_sum.js"></script>
+
+			<script>
+				// console.log(sum(3, 5));
+				// alert(sum(3, "a"));
+				// document.write(sum(4, 2));
+
+				let soma = "";
+				try {
+					soma = sum(3, "a");
+				} catch(e) {
+					alert("Ocorreu um erro")
+					console.log(e.message)
+				} finally {
+					console.log("bloco finally")
+				}
+
+				console.log(soma);
+				console.log("Fim do programa");
+			</script>
+		</body>
+	</html>
