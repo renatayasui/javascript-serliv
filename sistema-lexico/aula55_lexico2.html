@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = 10;
+        x = "uma string";
+
+        let msg = "uma \"string";
+        console.log(msg);
+
+        console.log( "2" * 2);
+
+        function teste () {
+            console.log(this);
+        }
+        const teste2 = () => {
+            console.log('teste2')
+            console.log(this)
+        }
+        teste();
+
+        const obj = {
+            n: 1,
+            teste,
+            teste2
+        }
+        obj.teste2()
+    </script>
+</body>
+</html>
+
