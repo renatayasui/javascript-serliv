@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-salvar">Salvar</button>
+    <div id="drinks"></div>
+
+    <script>
+
+        const btnSalvar = document.querySelector('#btn-salvar');
+        btnSalvar.addEventListener('click', function () {
+            btnSalvar.disabled = true;
+            btnSalvar.innerHTML = 'Salvando...';
+
+            const idade = prompt('Qual a sua idade?');
+
+            if (parseInt(idade) >= 18) {
+                document.querySelector('#drinks').innerHTML = 'drinks';
+            } else {
+                document.querySelector('#drinks').innerHTML = 'voce nao tem idade para isso';
+            }
+
+            btnSalvar.disabled = false;
+            btnSalvar.innerHTML = 'Salvar';
+        });
+
+
+    </script>
+</body>
+</html>
